@@ -1,0 +1,27 @@
+fullstack-app/
+│── backend/                 # Back-end services (Node.js, Express, or any framework)
+│   ├── controllers/         # Handles API request logic
+│   ├── models/              # Database models/schema
+│   ├── routes/              # API endpoints
+│   ├── services/            # Business logic and external API handling
+│   ├── utils/               # Helper functions (data validation, formatting, etc.)
+│   ├── config/              # Configuration files (env, DB connections)
+│   ├── middlewares/         # Auth, logging, error handling
+│   ├── tests/               # Backend tests (Jest, Mocha, etc.)
+│   ├── server.js            # Entry point for the backend server
+│   ├── package.json         # Backend dependencies
+│── frontend/                # Frontend React or Next.js app
+│   ├── public/              # Static assets (favicon, images)
+│   ├── src/
+│   │   ├── components/      # Reusable UI components (Button, Navbar, etc.)
+│   │   ├── pages/           # Main pages (Home, Dashboard, Profile, etc.)
+│   │   ├── services/        # API calls and data handling
+│   │   ├── styles/          # Global CSS, SCSS, or styled-components
+│   │   ├── utils/           # Utility functions (formatting, constants)
+│   │   ├── App.js           # Main React app entry
+│   │   ├── index.js         # ReactDOM render point
+│   ├── package.json         # Frontend dependencies
+│── .gitignore               # Ignore unnecessary files in Git
+│── README.md                # Project documentation
+│── docker-compose.yml       # Docker configuration (optional)
+│── .env                     # Environment variables
