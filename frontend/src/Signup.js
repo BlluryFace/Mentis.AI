@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Styles";
-import EmailInput from "./Components/EmailInput";
-import PasswordInput from "./Components/PasswordInput";
+import EmailInput from "./components/EmailInput";
+import PasswordInput from "./components/PasswordInput";
 import GoogleLogo from "./assets/google_icon.png";
 
 function Signup() {
