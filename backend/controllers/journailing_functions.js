@@ -1,5 +1,4 @@
 const pool = require("../config/postgreSQL_connection");
-const {query_timeout} = require("pg/lib/defaults");
 /** Add user's journal entry into database
  *
  * @param {string} user
