@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Styles";
+import styles from "../styles/Styles";
 
 function EmailInput({ value, onChange, placeholder = "Enter your email" }) {
   return (

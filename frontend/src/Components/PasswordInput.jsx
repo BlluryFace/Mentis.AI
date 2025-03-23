@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {EyeInvisibleOutlined, EyeOutlined} from "@ant-design/icons";
-import styles from "../Styles";
+import styles from "../styles/Styles";
 
 function PasswordInput({ value, onChange, placeholder = "Enter your Password" }) {
   const [password, setPassword] = useState("");
