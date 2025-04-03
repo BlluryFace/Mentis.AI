@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {EyeInvisibleOutlined, EyeOutlined} from "@ant-design/icons";
-import styles from "../styles/Styles";
+import "../styles/styles.css";
+
 
 function PasswordInput({ value, onChange, placeholder = "Enter your Password" }) {
   const [password, setPassword] = useState("");
@@ -10,7 +11,7 @@ function PasswordInput({ value, onChange, placeholder = "Enter your Password" })
       <input
         type={visible ? "text" : "password"}
         placeholder={placeholder}
-        style={styles.input}
+        className="input"
         value={password}
         onChange={(e)=>{setPassword(e.target.value)}}
       />
@@ -18,8 +19,9 @@ function PasswordInput({ value, onChange, placeholder = "Enter your Password" })
         {visible ? <EyeOutlined /> : <EyeInvisibleOutlined/>}
       </div>
     </div>
-    
+   
   );
 }
+
 
 export default PasswordInput;
