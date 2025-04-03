@@ -1,3 +1,34 @@
+-- ===============================================
+-- 🚀 Mentis.AI Database Schema Setup Instructions
+-- ===============================================
+-- This schema.sql file creates all necessary tables 
+-- for local development and feature testing.
+-- 
+-- 📌 How to use:
+-- 1. Ensure PostgreSQL is installed on your machine.
+-- 2. Create a database manually or via terminal:
+--      $ createdb mentis_ai
+-- 3. Run the schema script to populate tables:
+--      $ psql -U <your_username> -d mentis_ai -f database/schema.sql
+-- 
+-- 🔐 Make sure your .env file is properly configured:
+--   DB_USER=your_username
+--   DB_PASSWORD=your_password
+--   DB_HOST=localhost
+--   DB_PORT=5432
+--   DB_NAME=mentis_ai
+--
+-- ✅ This schema includes:
+--   - users
+--   - journal_entries
+--   - chatbot_conversations
+--   - self_reflection_insights
+--
+-- Please DO NOT modify structure without discussion.
+-- For questions, contact the database lead or open an issue.
+-- ===============================================
+
+
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
