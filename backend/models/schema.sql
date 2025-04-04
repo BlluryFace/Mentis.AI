@@ -9,7 +9,7 @@
 -- 2. Create a database manually or via terminal:
 --      $ createdb mentis_ai
 -- 3. Run the schema script to populate tables:
---      $ psql -U <your_username> -d mentis_ai -f database/schema.sql
+--      $ psql -U <your_username> -d mentis_ai -f backend/models/schema.sql
 -- 
 -- 🔐 Make sure your .env file is properly configured:
 --   DB_USER=your_username
