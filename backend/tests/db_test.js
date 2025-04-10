@@ -1,5 +1,4 @@
-const pool = require("../services/db");
-
+import pool from "../services/db";
  (async () => {
      try {
          console.log("📝 Inserting test data...");
@@ -8,10 +7,7 @@ const pool = require("../services/db");
          await pool.query("INSERT INTO users (name, email, password) " +
              "VALUES ('Test', 'test@example.com', '123');");
          console.log("✅ Test data inserted successfully.");
-         await pool.query("DELETE FROM users " +
-             "WHERE name = 'Test' " +
-             "AND email = 'test@example.com' " +
-             "AND password = 'test123';");
+         await pool.query("DELETE FROM users WHERE name = 'Test'");
          console.log("✅ Test data deleted successfully.");
      } catch (err) {
          console.error("❌ Query error:", err);

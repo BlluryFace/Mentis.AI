@@ -1,5 +1,9 @@
-const { Pool } = require("pg");
-require("dotenv").config();
+// Try connection using node ./backend/config/postgreSQL_connection.js
+import pkg from "pg";
+const { Pool } = pkg;
+
+import dotenv from "dotenv";
+dotenv.config();
 // Database connection configuration
 const pool = new Pool({
     user: process.env.DB_USER,       // Access user from .env
@@ -14,4 +18,4 @@ pool.connect()
     .then(() => console.log("Connected to PostgreSQL"))
     .catch(err => console.error("Connection error", err.stack));
 
-module.exports = pool;
+export default pool;
