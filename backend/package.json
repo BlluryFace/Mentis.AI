@@ -1,0 +1,16 @@
+{
+  "name": "mentis-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "db-test": "node tests/db_test.js",
+    "db": "node services/db.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "node": "^23.11.0",
+    "pg": "^8.14.1"
+  }
+}
