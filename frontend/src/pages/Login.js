@@ -4,7 +4,6 @@ import "../styles/styles.css";
 import EmailInput from "../Components/EmailInput";
 import PasswordInput from "../Components/PasswordInput";
 
-
 function Login() {
   const navigate = useNavigate();
   return (

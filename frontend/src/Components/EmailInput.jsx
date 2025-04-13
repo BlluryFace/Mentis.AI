@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/styles.css";
 
-
 function EmailInput({ value, onChange, placeholder = "Enter your email" }) {
   return (
     <div>
@@ -15,6 +14,5 @@ function EmailInput({ value, onChange, placeholder = "Enter your email" }) {
     </div>
   );
 }
-
 
 export default EmailInput;

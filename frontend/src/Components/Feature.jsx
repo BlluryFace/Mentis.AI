@@ -19,4 +19,3 @@ const Feature = ({title, description}) => {
 export default Feature;
 
 
-

@@ -5,11 +5,8 @@ import EmailInput from "../Components/EmailInput";
 import PasswordInput from "../Components/PasswordInput";
 import GoogleLogo from "../assets/google_icon.png";
 
-
 function Signup() {
   const navigate = useNavigate();
-
-
   return (
     <div>
       <div className="box">
@@ -36,6 +33,5 @@ function Signup() {
     </div>
   );
 }
-
 
 export default Signup;

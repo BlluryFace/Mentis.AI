@@ -12,8 +12,7 @@ function Home() {
   const navigate = useNavigate();
   const [activeQuestion, setActiveQuestion] = useState(null);
   const chatbot = () => {
-
-    navigate("/companion"); // Navigate after animation completes
+    navigate("/chatbot");
   };
 
   const faqs = [

@@ -290,7 +290,7 @@ html, body {
 
 .chat-box {
   width: 100%;
-  height: 100%;
+  height: 100%; /* Ensure it fills the whole screen */
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -298,10 +298,13 @@ html, body {
 }
 
 .message-box {
-  flex-grow: 1; /* Allows messages to take up all available space */
+  flex-grow: 1; /* Allow the message box to take up remaining space */
   padding: 15px;
   overflow-y: auto; /* Enables scrolling for messages */
   background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column; /* Ensure messages stack correctly */
+  max-height: 400px; /* Limit the max height for scrolling */
 }
 
 .message-container {
@@ -404,6 +407,13 @@ html, body {
   right: 20px;
   bottom: 20px;
   z-index: 1000;
+}
+
+/* Ensure message-box takes up space correctly */
+.message-box {
+  flex-grow: 1; /* Ensures this element takes remaining space */
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 
