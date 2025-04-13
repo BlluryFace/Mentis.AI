@@ -3,10 +3,16 @@ from dotenv import load_dotenv
 import os
 import sys
 import json
+import httpx
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Initialize OpenAI client with custom httpx client that doesn't use proxies
+http_client = httpx.Client()
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+    http_client=http_client
+)
 
 def analyze_sentiment(message): 
     """
@@ -115,7 +121,7 @@ def chat_with_ai(request):
         
         return {
             "reply": reply, 
-            "emotion": "emotion_data",
+            "emotion": emotion_data,
             "userId": user_id
         }
     except Exception as e:
