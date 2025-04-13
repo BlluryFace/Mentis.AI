@@ -1,0 +1,11 @@
+# Ignore system files
+.DS_Store
+.env
+.env.save
+node_modules/
+.vscode/
+.idea/
+.Trash/
+.cache/
+.gitconfig
+.local/
