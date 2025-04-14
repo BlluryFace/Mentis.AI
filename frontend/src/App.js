@@ -3,7 +3,9 @@ import { Routes, Route} from "react-router-dom";
 import Home from "./pages//Home";
 import Login from "./pages//Login";
 import Signup from "./pages//Signup";
-import Chatbot from "./pages//Chatbot";
+import ChatBot from "./pages//Chatbot";
+import Dashboard from "./pages//dashboard";
+
 
 function App() {
   return (
@@ -12,12 +14,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/chatbot" element={<ChatBot />} />
+          <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
     </div>
   );
 }
-
 
 export default App;
 

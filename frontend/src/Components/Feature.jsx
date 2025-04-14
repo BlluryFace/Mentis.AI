@@ -5,6 +5,7 @@ import testImage from "../assets/try.png";
 const Feature = ({title, description}) => {
   return (
     <div className="feature-container">
+
       <div className="feature-left">
         <img src={testImage} alt="Feature" className="feature-image" />
       </div>
