@@ -86,27 +86,6 @@
   color: black;
 }
 
-.google-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 10px;
-  width: 100%;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.google-icon {
-  width: 20px;
-  height: 15px;
-  object-fit: contain;
-}
-
 /* Header in homepage */
 .header {
   position: fixed;
@@ -309,9 +288,9 @@ html, body {
 
 /* The message box where messages will appear */
 .message-box {
-  flex-grow: 1; /* Takes all space between header (if any) and input */
+  flex-grow: 1;
   padding: 10px;
-  overflow-y: auto; /* Allows for scrolling */
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

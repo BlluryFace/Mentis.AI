@@ -13,7 +13,6 @@ const Header = () => {
           <Link to="/home" className="nav-link">Home </Link>
 
           {/* Jump to the feature section but if we dont have much thing on the homepage, we can delete that*/}
-          <Link to="/features" className="nav-link"> Feature </Link>
         </div>
 
 

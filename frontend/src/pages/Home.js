@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Link,  useNavigate } from "react-router-dom";
-//import Header from "../Components/Header";
+import Header from "../Components/Header";
 import Feature from "../Components/Feature";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { motion, AnimatePresence } from "framer-motion";
@@ -38,7 +38,6 @@ function Home() {
   ];
 
   return (
-
     <div className="container">
       <Scrollbars className="scrollContainer">
         <div className="content">

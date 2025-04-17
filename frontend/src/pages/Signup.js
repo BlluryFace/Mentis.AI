@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/styles.css";  // Import the external CSS file
 import EmailInput from "../Components/EmailInput";
 import PasswordInput from "../Components/PasswordInput";
-import GoogleLogo from "../assets/google_icon.png";
+import GoogleButton from 'react-google-button'
 
 function Signup() {
   const navigate = useNavigate();
@@ -25,10 +25,10 @@ function Signup() {
           <div className="line"></div>
         </div>
         <p></p>
-        <button className="googleButton">
-         <img src={GoogleLogo} alt="Google Logo" className="google-icon" />
-         Sign Up with Google
-        </button>
+        <div style={{display: "flex", justifyContent: "center", marginTop: "10px"}}>
+          <GoogleButton/>
+        </div>
+
       </div>
     </div>
   );
