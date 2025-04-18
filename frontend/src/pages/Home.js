@@ -41,58 +41,70 @@ function Home() {
     <div className="container">
       <Scrollbars className="scrollContainer">
         <div className="content">
-          <h1 className="title">Mentis.AI</h1>
-          <p className="subtitle">
-            Discover a supportive space for your mental well-being. Join us in taking proactive steps towards a healthier mind.
-          </p>
-          <Link to="/signup" className="start-button">Let's start now!</Link>
-          <Feature title = "Weekly Mood Chart" description =
-          "Our Weekly Mood Charts empower you to visualize your emotional patterns over time.Gain insights into your mental health and make informed decisions for your well-being."/>
-          <Feature title = "Music Recommendation" description =
-          "Our Music Recommendation feature suggests songs based on user preferences, mood, and listening history."/>
-          <Feature title = "Emotional Support" description =
-          "Our AI-Powered Support Chat provides comforting and motivational messages based on user input"/>
-          <Feature title = "Journaling Prompt" description =
-          "Our Journaling Prompt provides users with a safe space to express their feelings."/>
 
-          <h1 className="title">Frequently Asked Questions</h1>
-          <p className="subtitle">Everything you need to know about Mentis.AI</p>
+            <h1 className="title">Mentis.AI</h1>
+            <p className="subtitle">
+              Discover a supportive space for your mental well-being. Join us in taking proactive steps towards a
+              healthier mind.
+            </p>
+            <Link to="/signup" className="start-button">Let's start now!</Link>
 
-          <div>
-            <div>
-              {faqs.map((faq) => (
-                <div className="faq-item" key={faq.id}>
-                  <button className="faq-question"  onClick={() => setActiveQuestion(activeQuestion === faq.id ? null : faq.id)}>
-                  {faq.question}
-                  <span>{activeQuestion === faq.id ? <FaMinusCircle /> : <FaPlusCircle />}</span>
-                     </button>
-                   <AnimatePresence>
-                    {activeQuestion === faq.id && (
-                      <motion.div
-
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                      >
-                        <p></p>
-                        {faq.answer}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              ))}
+            <div className="section-feature">
+              <Feature title="Weekly Mood Chart" description=
+                  "Our Weekly Mood Charts empower you to visualize your emotional patterns over time.Gain insights into your mental health and make informed decisions for your well-being."/>
             </div>
-          </div>
-          {/*Testing purpose*/}
-          <Box className="chatbot-icon" onClick={chatbot}>
-            <img src={ChatBotImage} alt="Chatbot Icon" className="chatbot-icon-image"/>
-          </Box>
-          <Box className="dashboard-icon" onClick={dashboard}>Dashboard</Box>
+            <div className="section-feature">
+              <Feature title="Music Recommendation" description=
+                  "Our Music Recommendation feature suggests songs based on user preferences, mood, and listening history."/>
+            </div>
+            <div className="section-feature">
+              <Feature title="Emotional Support" description=
+                  "Our AI-Powered Support Chat provides comforting and motivational messages based on user input"/>
+            </div>
+            <div className="section-feature">
+              <Feature title="Journaling Prompt" description=
+                  "Our Journaling Prompt provides users with a safe space to express their feelings."/>
+            </div>
 
-        </div>
+            <h1 className="title">Frequently Asked Questions</h1>
+            <p className="subtitle">Everything you need to know about Mentis.AI</p>
+
+            <div>
+              <div>
+                {faqs.map((faq) => (
+                    <div className="faq-item" key={faq.id}>
+                      <button className="faq-question"
+                              onClick={() => setActiveQuestion(activeQuestion === faq.id ? null : faq.id)}>
+                        {faq.question}
+                        <span>{activeQuestion === faq.id ? <FaMinusCircle/> : <FaPlusCircle/>}</span>
+                      </button>
+                      <AnimatePresence>
+                        {activeQuestion === faq.id && (
+                            <motion.div
+
+                                initial={{opacity: 0, height: 0}}
+                                animate={{opacity: 1, height: "auto"}}
+                                exit={{opacity: 0, height: 0}}
+                            >
+                              <p></p>
+                              {faq.answer}
+                            </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                ))}
+              </div>
+            </div>
+            {/*Testing purpose*/}
+            <Box className="chatbot-icon" onClick={chatbot}>
+              <img src={ChatBotImage} alt="Chatbot Icon" className="chatbot-icon-image"/>
+            </Box>
+            <Box className="dashboard-icon" onClick={dashboard}>Dashboard</Box>
+
+          </div>
       </Scrollbars>
     </div>
-  );
+);
 }
 
 export default Home;
