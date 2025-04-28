@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 60px; /* Adjust top padding to account for fixed header if you have one */
+}
+
+.currentMood {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #e0e0ff; /* Light purple background */
+  border-radius: 8px;
+}
+
+.currentMood h1 {
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.currentMood p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.moodFilter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterButton {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filterButton:hover {
+  background-color: #eee;
+}
+
+.activeFilter {
+  background-color: #a0a0ff;
+  color: white;
+  border-color: #a0a0ff;
+}
+
+.topRecommendations {
+  margin-bottom: 30px;
+}
+
+.recommendationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.recommendationCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendationCard h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.recommendationCard .artist {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+
+.recommendationCard .genre {
+  color: #999;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.recommendationCard .playButton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  align-self: flex-start; /* Align button to the start of the card */
+}
+
+.recommendationCard .playButton:hover {
+  background-color: #0056b3;
+}
+
+.similarMoods {
+  margin-top: 30px;
+}
+
+.moodGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.moodButton {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.moodButton:hover {
+  background-color: #eee;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  font-size: 0.8rem;
+  border-top: 1px solid #eee;
+}
