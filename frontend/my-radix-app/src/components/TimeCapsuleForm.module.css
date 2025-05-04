@@ -1,0 +1,180 @@
+.appContainer {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 32px 24px;
+}
+
+.appContainer h1 {
+  margin-top: 32px;
+  font: 700 32px/40px "Inter", sans-serif;
+  color: var(--color-text-primary);
+  margin-bottom: 32px;
+  text-align: left; /* Adjust if needed */
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}
+
+.journalPanel {
+  flex: 1;
+}
+
+.card {
+  /* Radix UI Card already provides basic card styling */
+  padding: 24px;
+  border-radius: 24px; /* Apply border-radius here */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Apply box-shadow here */
+  background-color: var(--color-surface); /* Ensure background color */
+}
+
+.moodGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .moodGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.moodItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+  background: var(--color-input-background);
+  font: 400 14px/32px "Inter", sans-serif;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.moodItem.active {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .activityGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.activityItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+  background: var(--color-input-background);
+  font: 400 14px/32px "Inter", sans-serif;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.activityItem.active {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.formHeader {
+  justify-content: flex-end;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 24px;
+}
+
+.btnGhost {
+  padding: 8px 16px;
+  font: 500 14px/20px "Inter", sans-serif;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btnGhost:hover {
+  background-color: var(--color-input-background);
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font: 600 16px/24px "Inter", sans-serif;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font: 400 16px/24px "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+.textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.dateInput {
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font: 400 16px/24px "Inter", sans-serif;
+}
+
+.formActions {
+  text-align: right;
+  margin-top: 24px;
+}
+
+.btnPrimary {
+  padding: 0 24px;
+  height: 40px;
+  font: 600 16px/24px "Inter", sans-serif;
+  background: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btnPrimary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
