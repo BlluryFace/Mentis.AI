@@ -1,0 +1,35 @@
+# Node dependencies
+node_modules/
+
+# Environment
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+chat_response_*.txt
+test_errors_*.txt
+
+# Runtime data
+pids/
+*.pid
+*.pid.lock
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db 
