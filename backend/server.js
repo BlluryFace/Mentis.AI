@@ -1,5 +1,5 @@
 import express from "express"
-import journal from "./routes/journaling.js"
+import journal from "./controllers/journaling.js"
 const app = express()
 const PORT = process.env.PORT || 3000
 

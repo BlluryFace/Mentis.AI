@@ -1,4 +1,4 @@
-import pool from "../services/db";
+import pool from "../services/postgreSQL_connection.js";
  (async () => {
      try {
          console.log("📝 Inserting test data...");
