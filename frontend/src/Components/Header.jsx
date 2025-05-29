@@ -11,11 +11,10 @@ const Header = () => {
                     {/* If the user already log in then the home page should have the name of user or profile
           instead of showing home and login button */}
                     <Link to="/home" className="nav-link">Home </Link>
+                    <Link to="/contact" className="nav-link">Contact </Link>
 
                     {/* Jump to the feature section but if we dont have much thing on the homepage, we can delete that*/}
                 </div>
-
-
                 {/* Login and signup buttons */}
                 <div className="auth-buttons">
                     <Link to="/login" className="nav-button">Login</Link>

@@ -8,10 +8,12 @@
 }
 
 .container {
-    background-color: lightblue;
-    width: 100%;
-    height: 100vh;
+    height:105vh;
     display: flex;
+}
+.container-two {
+    display: flex;
+    gap: 2rem;
 }
 
 /* scrollbar */
@@ -57,7 +59,7 @@
 .button {
     width: 100%;
     padding: 12px;
-    background-color: black;
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 10px;
@@ -65,6 +67,11 @@
     cursor: pointer;
     margin: 20px auto;
 }
+
+.button:hover {
+    background-color: mediumblue; /* different blue when user almost click*/
+}
+
 
 .link {
     color: blue;
@@ -121,16 +128,26 @@
     transition: color 0.2s ease;
     padding: 0.5rem 0;
     position: relative;
+    margin-right:10px;
+}
+
+.section-feature-one {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .section-feature {
-    height: 100vh; /* Full screen */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  /* vertical centering */
-    align-items: center;      /* horizontal centering */
+    height:60vh;
+    justify-content: flex-start;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
 }
 
 .nav-button {
@@ -138,11 +155,10 @@
     padding: 10px 16px;
     margin: 4px;
     text-decoration: none;
-    background-color: black;
+    background-color: blue;
     color: white;
-    border-radius: 8px;
+    border-radius: 16px;
     font-size: 14px;
-    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -156,9 +172,10 @@
 }
 
 .title {
-    font-size: 4rem;
+    margin-top: 3rem;
+    font-size: 2.5rem;
     color: #333;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .subtitle {
@@ -169,14 +186,21 @@
 
 .start-button {
     display: inline-block;
-    background-color: black;
+    background-color: blue;
     color: white;
     padding: 1rem 2rem;
-    border-radius: 6px;
+    border-radius: 20px;
     text-decoration: none;
-    font-size: 1.7rem;
     font-weight: 500;
     transition: background-color .2s ease;
+}
+
+.start-button:hover {
+    background-color: mediumblue; /* different blue when user almost click*/
+}
+
+.nav-button:hover {
+    background-color: mediumblue; /* different blue when user almost click*/
 }
 
 html, body {
@@ -187,33 +211,22 @@ html, body {
 }
 
 /* FAQ Section */
-.faq-section {
-    margin-top: 40px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #F5E4D7;
-}
 
 .faq-list {
     list-style: none;
     padding: 0;
-    background-color: #F5E4D7;
 }
 
 .faq-item {
-    margin-bottom: 15px;
-    padding: 15px;
-    border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #F5E4D7;
+    border: 1px solid #ddd;
 }
 
 .faq-answer {
-    padding: 12px 20px;
+    padding: 12px 15px;
     font-size: 16px;
     margin-left: 0; /* Align answer with question */
     border-left: 2px solid #007bff;
-    background-color: #F5E4D7;
 }
 
 .faq-item {
@@ -227,11 +240,10 @@ html, body {
     width: 100%;
     text-align: center;
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
 }
 
 .faq-question:hover {
@@ -239,7 +251,7 @@ html, body {
 }
 
 /*For the feature*/
-.feature-container {
+.feature-container-one {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,33 +260,70 @@ html, body {
     width: 1200px;
 }
 
-.feature-left {
+.feature-image-one {
+    width: 100%;
+    object-fit: contain;
+}
+
+.feature-right-one {
+    padding-left: 170px;
+    padding-right: 80px;
+    width: 35%;
+}
+
+.feature-left-one {
+    padding-left: 100px;
+    padding-right:10px;
+    padding-bottom: 100px;
     flex: 1;
 }
 
-
+.feature-title-one {
+    color: mediumpurple;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 .feature-image {
-    width: 100%;
+    width: 37px;
     object-fit: contain;
 }
 
 .feature-right {
     flex: 2;
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: left;
+    display: flex;
 }
 
 .feature-title {
-    font-size: 28px;
+    color:mediumpurple;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
-
 .feature-description {
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
+    text-align: left;
 }
 
+.feature-container {
+    flex:1;
+    width: 150px;
+    height:240px;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 /* AI chatBot */
 
 /* Container that holds everything */
@@ -443,84 +492,4 @@ html, body {
 
 .send-button:hover {
     background-color: #0056b3;
-}
-
-.dashboard-icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #7392B7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    z-index: 1000;
-}
-
-/* Dashboard - Currently testing */
-/* Sidebar Styles */
-.sidebar {
-    width: 250px;
-    padding: 16px;
-    background-color: var(--light-blue);
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar .header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--dark-blue);
-}
-
-.sidebar .separator {
-    margin: 16px 0;
-    background-color: var(--medium-blue);
-}
-
-.sidebar .button {
-    background-color: var(--medium-blue);
-    color: var(--white);
-    padding: 8px 16px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    transition: background-color 0.2s;
-    text-decoration: none;
-}
-
-.sidebar .button:hover {
-    background-color: #6b8eb6;
-}
-
-/* Main Content Styles */
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: var(--light-blue);
-}
-
-.main-content .header {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--dark-blue);
-}
-
-.main-content .card {
-    margin-top: 16px;
-    padding: 16px;
-    background-color: var(--white);
-}
-
-.main-content .card .button {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.main-content .card .button:hover {
-    background-color: #5c7b98;
 }
