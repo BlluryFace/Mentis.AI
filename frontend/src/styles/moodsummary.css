@@ -1,0 +1,35 @@
+.moodContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.moodItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moodInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+.moodName {
+    font-weight: 500;
+}
+
+.moodEntries {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.percentage {
+    font-size: 1.125rem;
+    font-weight: 600;
+}

@@ -1,0 +1,189 @@
+.container-two {
+    min-height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+.logoIcon {
+    margin-right: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink {
+    padding: 0.25rem;
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: #3b82f6;
+}
+
+.navLinkActive {
+    padding: 0.25rem;
+    color: #2563eb;
+    font-weight: 500;
+    border-bottom: 2px solid #3b82f6;
+    text-decoration: none;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.userName {
+    font-size: 0.875rem;
+    color: #374151;
+}
+
+.main {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.welcomeSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.welcomeTitle {
+    padding-top:15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.5rem 0;
+}
+
+.welcomeSubtitle {
+    color: #6b7280;
+    margin: 0;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.musicButton {
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.musicButton:hover {
+    background-color: #f9fafb;
+}
+
+.newEntryButton {
+    border-radius: 0.375rem;
+    background-color: #3b82f6;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.newEntryButton:hover {
+    background-color: #2563eb;
+}
+
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .dashboardGrid {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+.chartCard {
+    border-radius: 0.75rem;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.summaryCard {
+    border-radius: 0.75rem;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.dateRange {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.badge {
+    border-radius: 9999px;
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.chartContainer {
+    margin-top: 1.5rem;
+}
+
+.statsSection {
+    margin-top: 1.5rem;
+}

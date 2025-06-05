@@ -1,0 +1,90 @@
+.moodChartContainer {
+    margin-top: 1rem;
+}
+
+.legend {
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legendColor-positive {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    background-color: #10b981;
+}
+
+.legendColor-neutral {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    background-color: #fbbf24;
+}
+
+.legendColor-challenging {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    background-color: #ef4444;
+}
+
+.legendText {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.chart {
+    display: flex;
+    height: 20rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.day-column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-container {
+    padding-left:45px;
+    padding-right:20px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 3rem;
+    flex-direction: column-reverse;
+}
+
+.bar {
+    width: 100%;
+}
+
+.challenging-bar {
+    background-color: #ef4444;
+}
+
+.neutral-bar {
+    background-color: #fbbf24;
+}
+
+.positive-bar {
+    background-color: #10b981;
+}
+
+.day-label {
+    padding-left:20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+}

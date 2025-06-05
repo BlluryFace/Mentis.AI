@@ -9,6 +9,7 @@
     "@mui/material": "^6.4.8",
     "@radix-ui/themes": "^3.2.1",
     "antd": "^5.24.4",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.6.2",
     "react": "^18.2.0",
     "react-custom-scrollbars-2": "^4.5.0",

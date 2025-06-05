@@ -21,12 +21,9 @@ function Home() {
     const chatbot = () => {
         navigate("/chatbot");
     };
-    /*
     const dashboard = () => {
-        navigate("/dashboard");
+        navigate("/Dashboard");
     };
-
-     */
     const faqs = [
         {
             id: 1,
@@ -128,12 +125,10 @@ function Home() {
                             ))}
                         </div>
                     </div>
-
-                    {/*Testing purpose*/}
                     <Box className="chatbot-icon" onClick={chatbot}>
                         <img src={ChatBotImage} alt="Chatbot Icon" className="chatbot-icon-image"/>
                     </Box>
-
+                    <Box className="dashboard-icon" onClick={dashboard}>Dashboard</Box>
                 </div>
             </Scrollbars>
 

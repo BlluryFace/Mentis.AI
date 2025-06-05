@@ -1,0 +1,41 @@
+.statContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.statCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.statDescription {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.dominantMood {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dominantEmoji {
+    font-size: 1.5rem;
+}

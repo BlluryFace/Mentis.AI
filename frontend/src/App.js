@@ -4,7 +4,7 @@ import Home from "./pages//Home";
 import Login from "./pages//Login";
 import Signup from "./pages//Signup";
 import ChatBot from "./pages//Chatbot";
-import Dashboard from "./pages//dashboard";
+import Dashboard from "./pages//Dashboard";
 
 
 function App() {
