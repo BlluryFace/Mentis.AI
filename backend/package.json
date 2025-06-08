@@ -10,7 +10,10 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
+    "googleapis": "^150.0.1",
     "node": "^23.11.0",
-    "pg": "^8.14.1"
+    "open": "^10.1.2",
+    "pg": "^8.14.1",
+    "server-destroy": "^1.0.1"
   }
 }
